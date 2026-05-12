@@ -1,4 +1,3 @@
-
 package sm;
 
 public class CestaMercado implements Comparable<CestaMercado> {
@@ -17,6 +16,6 @@ public class CestaMercado implements Comparable<CestaMercado> {
 
     @Override
     public String toString() {
-        return String.format("%-15s | R$ %.2f", nome, total);
+        return String.format("%-15s | Total: R$ %.2f", nome, total);
     }
 }
