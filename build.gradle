@@ -19,9 +19,19 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.46")
 
     testCompileOnly("org.projectlombok:lombok:1.18.46")
-    testAnnotationProcessor("org.projectlombok:lombok:1.18.46")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.46")    
 }
 
 test {
     useJUnitPlatform()
+}
+
+application {
+    mainClass = 'sm.Main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
 }
